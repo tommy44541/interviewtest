@@ -1,0 +1,9 @@
+@import "../../common/colors.scss";
+
+.counter{
+    background-color: $secondary-color;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+}

@@ -1,0 +1,15 @@
+@import "../../common/colors.scss";
+
+.sidebar{
+    background-color: $secondary-color;
+    margin-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 300px;
+}
