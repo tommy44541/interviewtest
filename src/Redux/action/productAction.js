@@ -11,6 +11,11 @@ export const fetchProduct = (id) => async (dispatch) =>{
     dispatch({type:ActionTypes.SELECTED_PRODUCT, payload: response.data})
 }
 
+export const fetchCategory = (category) => async(dispatch) =>{
+    const response = await fakestoreapi.get(`/products/category/${category}`)
+    dispatch({type:ActionTypes.FETCH_CATEGORY, payload: response.data})
+}
+
 export const setProducts = (products) => {
     return {
         type:ActionTypes.SET_PRODUCTS,

@@ -1,22 +1,20 @@
 import React,{useEffect} from 'react';
-import { useDispatch,useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { fetchProducts } from '../../Redux/action/productAction';
 import ProductComponent from '../ProductComponent/ProductComponent';
+//import ProductDetail from '../ProductDetail/ProductDetail';
 import "./ProductListing.scss";
 
 
 const ProductListing = () => {
-    const products = useSelector((state)=>state);
     const dispatch = useDispatch();
-
-
     useEffect(()=>{
         dispatch(fetchProducts())
     },[]);
 
     return (
         <div className="List-container">
-            <ProductComponent />            
+            <ProductComponent />   
         </div>
     );
 };
