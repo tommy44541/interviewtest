@@ -8,11 +8,9 @@ const ProductDetail = (props) => {
     function toggleModal() {
         setIsOpen(!isOpen);
         }
-
-
     return (
-        <div className="modal-container">
-        <button onClick={toggleModal} className="toggle-btn">點我看商品</button>
+        <div className="btn btn--white btn--animated btn--modal">
+        <button onClick={toggleModal} className="btn--inside">點我看商品</button>
             <Modal
                     isOpen={isOpen}
                     onRequestClose={toggleModal}
@@ -28,7 +26,7 @@ const ProductDetail = (props) => {
                         <div>category:{props.category}</div>
                         <div>{props.description}</div>
                     </div>
-                    <button onClick={toggleModal}>Close modal</button>
+                    <button onClick={toggleModal}>點我關閉</button>
             </Modal>
         </div>
     );

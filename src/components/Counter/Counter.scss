@@ -5,5 +5,12 @@
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 600;
+    color: #fff;
     display: flex;
+    justify-content: start;
+
+
+    @media only screen and (max-width:800px){
+        justify-content: center;
+    }
 }

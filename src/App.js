@@ -6,6 +6,8 @@ import Carousel from './components/Carousel/Carousel';
 import Counter from './components/Counter/Counter';
 import HeroSection from './components/HeroSection/HeroSection';
 import TopBtn from './components/Button/TopBtn';
+
+
 //import ProductDetail from './components/ProductDetail/ProductDetail';
 
 function App() {

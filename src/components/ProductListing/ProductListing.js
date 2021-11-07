@@ -7,6 +7,7 @@ import "./ProductListing.scss";
 
 
 const ProductListing = () => {
+    //抓資料
     const dispatch = useDispatch();
     useEffect(()=>{
         dispatch(fetchProducts())

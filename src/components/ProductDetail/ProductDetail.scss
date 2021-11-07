@@ -10,6 +10,7 @@
     border-radius: 4px;
     outline: none;
     padding: 20px;
+
   }
   
   .myoverlay {
@@ -24,10 +25,12 @@
   .ReactModal__Overlay {
     opacity: 0;
     transition: opacity 500ms ease-in-out;
+
   }
   
   .ReactModal__Overlay--after-open {
     opacity: 1;
+    z-index: 1000;
   }
   
   .ReactModal__Overlay--before-close {
@@ -35,6 +38,7 @@
   }
 
 
-.toggle-btn{
-  margin-left: 35%;
-}
+  .btn--modal{
+    margin-top: 10px ;
+    margin-left: 27%;
+  }

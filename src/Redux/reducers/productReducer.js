@@ -15,13 +15,16 @@ export const productReducers = (state = initialState,{type,payload}) =>{
     }
 }
 
-export const selectedProductReducer = (state={},{type,payload}) =>{
-    switch (type) {
-        case ActionTypes.SELECTED_PRODUCT:
-            return {...state, ...payload}
-        case ActionTypes.REMOVE_SELECTED_PRODUCT:
-            return {}
-        default:
-            return state;
-    }
-}
+
+//渲染新頁面才要用到這裡
+
+// export const selectedProductReducer = (state={},{type,payload}) =>{
+//     switch (type) {
+//         case ActionTypes.SELECTED_PRODUCT:
+//             return {...state, ...payload}
+//         case ActionTypes.REMOVE_SELECTED_PRODUCT:
+//             return {}
+//         default:
+//             return state;
+//     }
+// }

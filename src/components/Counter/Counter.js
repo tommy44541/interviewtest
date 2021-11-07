@@ -1,8 +1,9 @@
-import React,{useEffect, useState} from 'react';
+import React,{useState} from 'react';
 import "./Counter.scss";
 import CountDownTimer from './CountDownTimer';
 
 const Counter = () => {
+    //86400秒 = 24小時
     const [seconds] = useState(86400)
     
 

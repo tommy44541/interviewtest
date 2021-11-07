@@ -16,22 +16,24 @@ export const fetchCategory = (category) => async(dispatch) =>{
     dispatch({type:ActionTypes.FETCH_CATEGORY, payload: response.data})
 }
 
-export const setProducts = (products) => {
-    return {
-        type:ActionTypes.SET_PRODUCTS,
-        payload:products,
-    }
-}
+//暫時用不到
 
-export const selectedProducts = (product) => {
-    return {
-        type:ActionTypes.SELECTED_PRODUCT,
-        payload:product,
-    }
-}
+// export const setProducts = (products) => {
+//     return {
+//         type:ActionTypes.SET_PRODUCTS,
+//         payload:products,
+//     }
+// }
 
-export const removeSelectedProducts = () => {
-    return {
-        type:ActionTypes.REMOVE_SELECTED_PRODUCT,
-    }
-}
+// export const selectedProducts = (product) => {
+//     return {
+//         type:ActionTypes.SELECTED_PRODUCT,
+//         payload:product,
+//     }
+// }
+
+// export const removeSelectedProducts = () => {
+//     return {
+//         type:ActionTypes.REMOVE_SELECTED_PRODUCT,
+//     }
+// }

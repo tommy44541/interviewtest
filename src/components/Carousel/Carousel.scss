@@ -2,6 +2,12 @@
 
 .carousel{
     background-color: $secondary-color;
-    height:300px;
+    height:500px;
     margin-bottom: 10px;
+
+    @media only screen and (max-width:800px){
+        margin-bottom: 0;
+    }
+
 }
+

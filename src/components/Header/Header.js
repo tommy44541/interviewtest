@@ -8,8 +8,11 @@ const Header = () => {
     const dispatch = useDispatch();
     const submitHandler =(e)=>{
         e.preventDefault();
+        //防止空輸入
         if(term === "") return alert("Please enter search term");
+        //目前只能輸入api指定的4種類別名,無模糊搜索
         dispatch(fetchCategory(term))
+        //更新state後清空輸入
         setTerm("")
     }
 
@@ -19,7 +22,7 @@ const Header = () => {
                     <form onSubmit={submitHandler}>
                         <input type="text"
                             value={term}
-                            placeholder="Search item"
+                            placeholder="Search item || ex: men's clothing ,electronics"
                             onChange={(e)=>setTerm(e.target.value)} />
                     <button type="submit"><i className="fa fa-search"></i></button>
                     </form>

@@ -1,6 +1,9 @@
+@import "../../common/colors.scss";
+
 .card-container{
     width: 300px;
-    background-color: royalblue;
+    background-color: $secondary-color;
+    color: #fff;
 }
 
 img{
@@ -8,6 +11,8 @@ img{
     height:400px;
 
 }
+
+
 
 
 

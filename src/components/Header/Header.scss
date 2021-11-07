@@ -10,12 +10,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 10000;
 }
 
 .search-bar{
     width: 50%;
     display: flex;
     justify-content:start;
+    @media only screen and (max-width:1200px){
+        width: 95%;
+        justify-content:center;
+    }
     
 
     form{
